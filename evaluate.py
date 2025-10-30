@@ -339,7 +339,7 @@ def unqover_evaluate(tag, component, model, tokenizer, few_shot=False, persisten
                  device='cpu', baseline=True, verbose=False,
                  interventions=None, intervention_fn=None):
     print(f"----------Evaluate UNQOVER-------------")
-    frame = load_dataset('json', data_files=f'CAL_data/unqover/datas.jsonl')['train']
+    frame = load_dataset('iproskurina/unqover')['train']
 
     def id(head_output, layer_name):
         return head_output
